@@ -24,7 +24,7 @@
 <div class="inner">
     <div>
         
-        <h6><a><a href="login"> Login</a> /<a href="register"> Register</a></a></h6>
+        <h6><a href="login"> Login</a> /<a href="register"> Register</a></h6>
         <h4>Sign Up</h4>
 
 
