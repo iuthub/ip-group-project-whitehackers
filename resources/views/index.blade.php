@@ -25,7 +25,7 @@
             <a href="/product/{{$product->id}}"><img src="/uploads/images/{{$product->image}}"></a>
                 <div class="details p-4">
                     <h3 class="mb-3">{{$product->name}}</h3>
-                    <label class="mb-4">{{$product->price}}</label><br>
+                    <label class="mb-4">${{$product->price}}</label><br>
                     <a href="/add/{{$product->id}}" class="add2cart" data-id="12">Add to cart</a>
                 </div>
             </div>

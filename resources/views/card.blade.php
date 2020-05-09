@@ -10,6 +10,7 @@ class="cart"
 @endpush
 @section('block')
 
+
 <main class="d-flex justify-content-center pb-5">
 
     <div>
@@ -22,7 +23,7 @@ class="cart"
         @foreach ($cards as $card)
 
         <div class="product d-flex">
-            <img src="uploads/images/{{$card->product->image}}" alt="">
+            <img style=" height: 400px;width: 400px;object-fit: contain;" src="uploads/images/{{$card->product->image}}" alt="">
             <div class="details pl-5">
                 <h5 class="mb-4">{{$card->product->name}}</h5>
                 <p>{{$card->product->description}}</p>

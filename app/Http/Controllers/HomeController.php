@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,7 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::find(Auth::id());
+        $user = User::find(Auth::id());
+        $products = $user->products;
 
         return view('home',compact('products'));
     }

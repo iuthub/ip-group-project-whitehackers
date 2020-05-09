@@ -10,11 +10,10 @@ class="admin"
 @endpush
 @section('block')
 
-<main class="d-flex justify-content-center">
 
+<main class="d-flex justify-content-center">
     <div>
         <h4>Administrating panel</h4>
-        <form action="" method="post">
             @if (empty($products))
             <p>No products</p>
             @else
@@ -36,7 +35,7 @@ class="admin"
                         <td>{{$product->name}}</td>
                         <td>${{$product->price}}</td>
                         <td>
-                            <form action="product/{{$product->id}}" method="post">
+                            <form action="/product/{{$product->id}}" method="post">
                                 @method("DELETE")
                                 @csrf
                                 <input type="submit" value="delete">
@@ -52,7 +51,6 @@ class="admin"
                 </tbody>
             </table>
             @endif
-        </form>
 
 
 

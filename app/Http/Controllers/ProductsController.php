@@ -73,7 +73,6 @@ class ProductsController extends Controller
         $categories = Category::all();
         return view('create', ['categories' => $categories]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -82,6 +81,11 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => ['required', 'unique:products', 'max:255'],
+            'description' => ['required'],
+            'image'=> ['required','mimes:jpeg,jpg,png,gif|required|max:10000']
+        ]);
 
         $product = new Product;
         $product->name = $request->name;
