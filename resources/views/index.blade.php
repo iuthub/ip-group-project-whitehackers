@@ -15,7 +15,14 @@
     </ul>
 </aside>
 <div class="products flex-grow-1">
-    <h2>Web title</h2>
+ 
+    @if (isset($categoryName))
+<h2>{{$categoryName}}</h2>
+    @else
+        <h2>Products</h2>
+    @endif
+
+
     <hr>
     <div class="d-flex mt-5 flex-wrap justify-content-between">
 

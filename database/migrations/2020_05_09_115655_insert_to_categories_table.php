@@ -16,7 +16,7 @@ class InsertToCategoriesTable extends Migration
     {
         DB::table('categories')->insert(
             array(
-                'name' => 'Computer'
+                'name' => 'Computers'
             )
         );
         DB::table('categories')->insert(
@@ -41,9 +41,10 @@ class InsertToCategoriesTable extends Migration
         );
         DB::table('categories')->insert(
             array(
-                'name' => 'Detergens'
+                'name' => 'Detergent'
             )
         );
+
     }
 
     /**
