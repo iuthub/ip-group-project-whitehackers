@@ -12,7 +12,7 @@ return [
     | syntax for every one. Here you may define a default connection.
     |
     */
-
+//default
     'default' => env('QUEUE_CONNECTION', 'sync'),
 
     /*

@@ -18,7 +18,7 @@ return [
     */
 
     'default' => env('LOG_CHANNEL', 'stack'),
-
+//Log Channels
     /*
     |--------------------------------------------------------------------------
     | Log Channels
@@ -33,7 +33,7 @@ return [
     |                    "custom", "stack"
     |
     */
-
+//channels
     'channels' => [
         'stack' => [
             'driver' => 'stack',

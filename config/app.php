@@ -176,7 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
     ],
-
+// class aliases
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
