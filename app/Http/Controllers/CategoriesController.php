@@ -14,6 +14,6 @@ class CategoriesController extends Controller
         $category = Category::find($id);
         $categoryName= $category->name;
         $products = $category->products;
-        return view('index',['products'=>$products],['categoryName'=>$categoryName]);
+        return view('index',['products'=>$products],['categoryName'=>$categoryName],['category1',$category]);
     }
 }

@@ -9,7 +9,7 @@
     <ul>
 
         @foreach ($categories as $category)
-            <li><a href="/category/{{$category->id}}" class="active">{{$category->name}}</a></li>
+            <li><a href="/category/{{$category->id}}" class="<? if($category1->id==$category->id){echo "active"} ?>">{{$category->name}}</a></li>
         @endforeach
 
     </ul>
